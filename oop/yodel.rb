@@ -9,6 +9,15 @@
 # constructor accordingly.
 
 class Yodel
+  attr_reader :segment, :count
+  def initialize(input_options)
+    @segment = input_options[:segment]
+    @count = input_options[:count]
+  end
+
+  def articulate
+    @articulate = segment * count
+  end
 
 end
 
